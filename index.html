@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlexMovies 😎</title>
+  <link rel="icon" href="icon.ico">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<nav>
+    <h2>🎬 FlexMovies</h2>
+    <ul>
+        <li onclick="showSection('home')">Home</li>
+        <li onclick="showSection('featured')">Featured</li>
+    </ul>
+</nav>
+
+<div id="home" class="section active">
+    <div class="container">
+        <h1>Search Movies</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button  onclick="searchMovie()">Search</button>
+        </div>
+        <div id="movies"></div>
+    </div>
+</div>
+
+<div id="featured" class="section">
+    <h1 style="text-align:center; margin-bottom:20px;">🌟 Featured Movies</h1>
+    <div id="featuredMovie" class="featured-container"></div>
+</div>
+
+
+
+</body>
+</html>
